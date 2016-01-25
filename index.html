@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Pomodo</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="dist/css/main.css">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<meta name="description"
+			  content="A beautiful online pomodoro timer that saves your progress!">
+		<meta name="author" content="Tom Speak">
+		<meta name="keywords"
+			  content="pomodoro, pomodori, time tracking, time management, timer,
+			   pomo, pomodor, tomato, tomato timer, tomato pomodoro">
+		<meta property="og:title" content="Pomodo Timer">
+		<meta property="og:image" content="http://pomodo.io/img/tomato--icon.png">
+		<meta property="og:description" content="An online pomodoro timer that saves your progress!">
+	</head>
+
+	<body class="js-body" data-region="app-view">
+		<header class="header">
+			<h2>Pomodo</h2>
+			<div data-region="count"></div>
+			<div class="sidebar-toggle circle js-sidebar-toggle" data-text-swap="X">?</div>
+		</header>
+
+		<div data-region="sidebar"></div>
+
+		<div class="outer js-container">
+			<div class="middle">
+				<div class="inner">
+					<div data-region="notification"></div>
+
+					<div data-region="countdown"></div>
+
+					<div data-region="controls"></div>
+				</div>
+			</div>
+		</div>
+
+		<script src="dist/js/bundle.js"></script>
+
+	</body>
+</html>
