@@ -20,7 +20,7 @@ $(document).ready(function() {
 	attachFastClick(document.body);
 });
 
-},{"./routers/app-router.js":"/home/raphael/src/pomodo.io/public/js/routers/app-router.js","backbone":"/home/raphael/src/pomodo.io/public/node_modules/backbone/backbone.js","fastclick":"/home/raphael/src/pomodo.io/public/node_modules/fastclick/lib/fastclick.js","jquery":"/home/raphael/src/pomodo.io/public/node_modules/jquery/dist/jquery.js"}],"/home/raphael/src/pomodo.io/public/js/events/vent.js":[function(require,module,exports){
+},{"./routers/app-router.js":"/home/raphael/src/pomodo.io/js/routers/app-router.js","backbone":"/home/raphael/src/pomodo.io/node_modules/backbone/backbone.js","fastclick":"/home/raphael/src/pomodo.io/node_modules/fastclick/lib/fastclick.js","jquery":"/home/raphael/src/pomodo.io/node_modules/jquery/dist/jquery.js"}],"/home/raphael/src/pomodo.io/js/events/vent.js":[function(require,module,exports){
 var Backbone = require('backbone');
 var _ = require('lodash');
 var _vent = null;
@@ -43,7 +43,7 @@ module.exports = {
 	}
 }
 
-},{"backbone":"/home/raphael/src/pomodo.io/public/node_modules/backbone/backbone.js","lodash":"/home/raphael/src/pomodo.io/public/node_modules/lodash/dist/lodash.js"}],"/home/raphael/src/pomodo.io/public/js/models/notification.js":[function(require,module,exports){
+},{"backbone":"/home/raphael/src/pomodo.io/node_modules/backbone/backbone.js","lodash":"/home/raphael/src/pomodo.io/node_modules/lodash/dist/lodash.js"}],"/home/raphael/src/pomodo.io/js/models/notification.js":[function(require,module,exports){
 var Backbone = require('backbone');
 Backbone.LocalStorage = require("backbone.localstorage");
 var $ = require('jquery');
@@ -83,7 +83,7 @@ module.exports = Backbone.Model.extend({
 	}
 });
 
-},{"./../events/vent.js":"/home/raphael/src/pomodo.io/public/js/events/vent.js","backbone":"/home/raphael/src/pomodo.io/public/node_modules/backbone/backbone.js","backbone.localstorage":"/home/raphael/src/pomodo.io/public/node_modules/backbone.localstorage/backbone.localStorage.js","jquery":"/home/raphael/src/pomodo.io/public/node_modules/jquery/dist/jquery.js"}],"/home/raphael/src/pomodo.io/public/js/models/timer.js":[function(require,module,exports){
+},{"./../events/vent.js":"/home/raphael/src/pomodo.io/js/events/vent.js","backbone":"/home/raphael/src/pomodo.io/node_modules/backbone/backbone.js","backbone.localstorage":"/home/raphael/src/pomodo.io/node_modules/backbone.localstorage/backbone.localStorage.js","jquery":"/home/raphael/src/pomodo.io/node_modules/jquery/dist/jquery.js"}],"/home/raphael/src/pomodo.io/js/models/timer.js":[function(require,module,exports){
 var Backbone = require('backbone');
 var _ = require('lodash');
 Backbone.LocalStorage = require("backbone.localstorage");
@@ -229,7 +229,7 @@ module.exports = Backbone.Model.extend({
 	}
 });
 
-},{"./../events/vent.js":"/home/raphael/src/pomodo.io/public/js/events/vent.js","backbone":"/home/raphael/src/pomodo.io/public/node_modules/backbone/backbone.js","backbone.localstorage":"/home/raphael/src/pomodo.io/public/node_modules/backbone.localstorage/backbone.localStorage.js","jquery":"/home/raphael/src/pomodo.io/public/node_modules/jquery/dist/jquery.js","lodash":"/home/raphael/src/pomodo.io/public/node_modules/lodash/dist/lodash.js"}],"/home/raphael/src/pomodo.io/public/js/routers/app-router.js":[function(require,module,exports){
+},{"./../events/vent.js":"/home/raphael/src/pomodo.io/js/events/vent.js","backbone":"/home/raphael/src/pomodo.io/node_modules/backbone/backbone.js","backbone.localstorage":"/home/raphael/src/pomodo.io/node_modules/backbone.localstorage/backbone.localStorage.js","jquery":"/home/raphael/src/pomodo.io/node_modules/jquery/dist/jquery.js","lodash":"/home/raphael/src/pomodo.io/node_modules/lodash/dist/lodash.js"}],"/home/raphael/src/pomodo.io/js/routers/app-router.js":[function(require,module,exports){
 var Backbone = require('backbone');
 var $ = require('jquery');
 var _ = require('lodash');
@@ -252,7 +252,7 @@ var models = {
 
 module.exports = Backbone.Router.extend({
 	routes: {
-		'': "home"
+		'pomodo.io/': "home"
 	},
 	
 	initialize: function(callback){
@@ -293,7 +293,7 @@ module.exports = Backbone.Router.extend({
 	}
 });
 
-},{"./../models/notification.js":"/home/raphael/src/pomodo.io/public/js/models/notification.js","./../models/timer.js":"/home/raphael/src/pomodo.io/public/js/models/timer.js","./../views/app.js":"/home/raphael/src/pomodo.io/public/js/views/app.js","./../views/controls.js":"/home/raphael/src/pomodo.io/public/js/views/controls.js","./../views/count.js":"/home/raphael/src/pomodo.io/public/js/views/count.js","./../views/countdown.js":"/home/raphael/src/pomodo.io/public/js/views/countdown.js","./../views/notification.js":"/home/raphael/src/pomodo.io/public/js/views/notification.js","./../views/sidebar.js":"/home/raphael/src/pomodo.io/public/js/views/sidebar.js","./../views/toggle-notifications.js":"/home/raphael/src/pomodo.io/public/js/views/toggle-notifications.js","backbone":"/home/raphael/src/pomodo.io/public/node_modules/backbone/backbone.js","jquery":"/home/raphael/src/pomodo.io/public/node_modules/jquery/dist/jquery.js","lodash":"/home/raphael/src/pomodo.io/public/node_modules/lodash/dist/lodash.js"}],"/home/raphael/src/pomodo.io/public/js/views/app.js":[function(require,module,exports){
+},{"./../models/notification.js":"/home/raphael/src/pomodo.io/js/models/notification.js","./../models/timer.js":"/home/raphael/src/pomodo.io/js/models/timer.js","./../views/app.js":"/home/raphael/src/pomodo.io/js/views/app.js","./../views/controls.js":"/home/raphael/src/pomodo.io/js/views/controls.js","./../views/count.js":"/home/raphael/src/pomodo.io/js/views/count.js","./../views/countdown.js":"/home/raphael/src/pomodo.io/js/views/countdown.js","./../views/notification.js":"/home/raphael/src/pomodo.io/js/views/notification.js","./../views/sidebar.js":"/home/raphael/src/pomodo.io/js/views/sidebar.js","./../views/toggle-notifications.js":"/home/raphael/src/pomodo.io/js/views/toggle-notifications.js","backbone":"/home/raphael/src/pomodo.io/node_modules/backbone/backbone.js","jquery":"/home/raphael/src/pomodo.io/node_modules/jquery/dist/jquery.js","lodash":"/home/raphael/src/pomodo.io/node_modules/lodash/dist/lodash.js"}],"/home/raphael/src/pomodo.io/js/views/app.js":[function(require,module,exports){
 var Backbone = require('backbone');
 var _ = require('lodash');
 var $ = require('jquery');
@@ -333,7 +333,7 @@ module.exports = Backbone.View.extend({
 
 });
 
-},{"backbone":"/home/raphael/src/pomodo.io/public/node_modules/backbone/backbone.js","hbsfy/runtime":"/home/raphael/src/pomodo.io/public/node_modules/hbsfy/runtime.js","jquery":"/home/raphael/src/pomodo.io/public/node_modules/jquery/dist/jquery.js","lodash":"/home/raphael/src/pomodo.io/public/node_modules/lodash/dist/lodash.js"}],"/home/raphael/src/pomodo.io/public/js/views/controls.js":[function(require,module,exports){
+},{"backbone":"/home/raphael/src/pomodo.io/node_modules/backbone/backbone.js","hbsfy/runtime":"/home/raphael/src/pomodo.io/node_modules/hbsfy/runtime.js","jquery":"/home/raphael/src/pomodo.io/node_modules/jquery/dist/jquery.js","lodash":"/home/raphael/src/pomodo.io/node_modules/lodash/dist/lodash.js"}],"/home/raphael/src/pomodo.io/js/views/controls.js":[function(require,module,exports){
 var Backbone = require('backbone');
 var _ = require('lodash');
 var $ = require('jquery');
@@ -376,7 +376,7 @@ module.exports = Backbone.View.extend({
 
 });
 
-},{"../../templates/_controls.html":"/home/raphael/src/pomodo.io/public/templates/_controls.html","./../events/vent.js":"/home/raphael/src/pomodo.io/public/js/events/vent.js","backbone":"/home/raphael/src/pomodo.io/public/node_modules/backbone/backbone.js","hbsfy/runtime":"/home/raphael/src/pomodo.io/public/node_modules/hbsfy/runtime.js","jquery":"/home/raphael/src/pomodo.io/public/node_modules/jquery/dist/jquery.js","lodash":"/home/raphael/src/pomodo.io/public/node_modules/lodash/dist/lodash.js"}],"/home/raphael/src/pomodo.io/public/js/views/count.js":[function(require,module,exports){
+},{"../../templates/_controls.html":"/home/raphael/src/pomodo.io/templates/_controls.html","./../events/vent.js":"/home/raphael/src/pomodo.io/js/events/vent.js","backbone":"/home/raphael/src/pomodo.io/node_modules/backbone/backbone.js","hbsfy/runtime":"/home/raphael/src/pomodo.io/node_modules/hbsfy/runtime.js","jquery":"/home/raphael/src/pomodo.io/node_modules/jquery/dist/jquery.js","lodash":"/home/raphael/src/pomodo.io/node_modules/lodash/dist/lodash.js"}],"/home/raphael/src/pomodo.io/js/views/count.js":[function(require,module,exports){
 var Backbone = require('backbone');
 var $ = require('jquery');
 Backbone.$ = $;
@@ -404,7 +404,7 @@ module.exports = Backbone.View.extend({
 	}
 });
 
-},{"backbone":"/home/raphael/src/pomodo.io/public/node_modules/backbone/backbone.js","jquery":"/home/raphael/src/pomodo.io/public/node_modules/jquery/dist/jquery.js"}],"/home/raphael/src/pomodo.io/public/js/views/countdown.js":[function(require,module,exports){
+},{"backbone":"/home/raphael/src/pomodo.io/node_modules/backbone/backbone.js","jquery":"/home/raphael/src/pomodo.io/node_modules/jquery/dist/jquery.js"}],"/home/raphael/src/pomodo.io/js/views/countdown.js":[function(require,module,exports){
 var Backbone = require('backbone');
 var $ = require('jquery');
 Backbone.$ = $;
@@ -452,7 +452,7 @@ module.exports = Backbone.View.extend({
 	}
 });
 
-},{"../../templates/_countdown.html":"/home/raphael/src/pomodo.io/public/templates/_countdown.html","backbone":"/home/raphael/src/pomodo.io/public/node_modules/backbone/backbone.js","jquery":"/home/raphael/src/pomodo.io/public/node_modules/jquery/dist/jquery.js"}],"/home/raphael/src/pomodo.io/public/js/views/notification.js":[function(require,module,exports){
+},{"../../templates/_countdown.html":"/home/raphael/src/pomodo.io/templates/_countdown.html","backbone":"/home/raphael/src/pomodo.io/node_modules/backbone/backbone.js","jquery":"/home/raphael/src/pomodo.io/node_modules/jquery/dist/jquery.js"}],"/home/raphael/src/pomodo.io/js/views/notification.js":[function(require,module,exports){
 var Backbone = require('backbone');
 var $ = require('jquery');
 var _ = require('lodash');
@@ -510,7 +510,7 @@ module.exports = Backbone.View.extend({
 
 });
 
-},{"../../templates/_notification.html":"/home/raphael/src/pomodo.io/public/templates/_notification.html","backbone":"/home/raphael/src/pomodo.io/public/node_modules/backbone/backbone.js","jquery":"/home/raphael/src/pomodo.io/public/node_modules/jquery/dist/jquery.js","lodash":"/home/raphael/src/pomodo.io/public/node_modules/lodash/dist/lodash.js"}],"/home/raphael/src/pomodo.io/public/js/views/sidebar.js":[function(require,module,exports){
+},{"../../templates/_notification.html":"/home/raphael/src/pomodo.io/templates/_notification.html","backbone":"/home/raphael/src/pomodo.io/node_modules/backbone/backbone.js","jquery":"/home/raphael/src/pomodo.io/node_modules/jquery/dist/jquery.js","lodash":"/home/raphael/src/pomodo.io/node_modules/lodash/dist/lodash.js"}],"/home/raphael/src/pomodo.io/js/views/sidebar.js":[function(require,module,exports){
 var Backbone = require('backbone');
 var _ = require('lodash');
 var $ = require('jquery');
@@ -529,7 +529,7 @@ module.exports = Backbone.View.extend({
 
 });
 
-},{"../../templates/_sidebar.html":"/home/raphael/src/pomodo.io/public/templates/_sidebar.html","backbone":"/home/raphael/src/pomodo.io/public/node_modules/backbone/backbone.js","hbsfy/runtime":"/home/raphael/src/pomodo.io/public/node_modules/hbsfy/runtime.js","jquery":"/home/raphael/src/pomodo.io/public/node_modules/jquery/dist/jquery.js","lodash":"/home/raphael/src/pomodo.io/public/node_modules/lodash/dist/lodash.js"}],"/home/raphael/src/pomodo.io/public/js/views/toggle-notifications.js":[function(require,module,exports){
+},{"../../templates/_sidebar.html":"/home/raphael/src/pomodo.io/templates/_sidebar.html","backbone":"/home/raphael/src/pomodo.io/node_modules/backbone/backbone.js","hbsfy/runtime":"/home/raphael/src/pomodo.io/node_modules/hbsfy/runtime.js","jquery":"/home/raphael/src/pomodo.io/node_modules/jquery/dist/jquery.js","lodash":"/home/raphael/src/pomodo.io/node_modules/lodash/dist/lodash.js"}],"/home/raphael/src/pomodo.io/js/views/toggle-notifications.js":[function(require,module,exports){
 var Backbone = require('backbone');
 var $ = require('jquery');
 var Handlebars = require("hbsfy/runtime");
@@ -604,7 +604,7 @@ module.exports = Backbone.View.extend({
 
 });
 
-},{"../../templates/_toggle-notifications.html":"/home/raphael/src/pomodo.io/public/templates/_toggle-notifications.html","backbone":"/home/raphael/src/pomodo.io/public/node_modules/backbone/backbone.js","hbsfy/runtime":"/home/raphael/src/pomodo.io/public/node_modules/hbsfy/runtime.js","jquery":"/home/raphael/src/pomodo.io/public/node_modules/jquery/dist/jquery.js"}],"/home/raphael/src/pomodo.io/public/node_modules/backbone.localstorage/backbone.localStorage.js":[function(require,module,exports){
+},{"../../templates/_toggle-notifications.html":"/home/raphael/src/pomodo.io/templates/_toggle-notifications.html","backbone":"/home/raphael/src/pomodo.io/node_modules/backbone/backbone.js","hbsfy/runtime":"/home/raphael/src/pomodo.io/node_modules/hbsfy/runtime.js","jquery":"/home/raphael/src/pomodo.io/node_modules/jquery/dist/jquery.js"}],"/home/raphael/src/pomodo.io/node_modules/backbone.localstorage/backbone.localStorage.js":[function(require,module,exports){
 /**
  * Backbone localStorage Adapter
  * Version 1.1.16
@@ -864,7 +864,7 @@ Backbone.sync = function(method, model, options) {
 return Backbone.LocalStorage;
 }));
 
-},{"backbone":"/home/raphael/src/pomodo.io/public/node_modules/backbone/backbone.js"}],"/home/raphael/src/pomodo.io/public/node_modules/backbone/backbone.js":[function(require,module,exports){
+},{"backbone":"/home/raphael/src/pomodo.io/node_modules/backbone/backbone.js"}],"/home/raphael/src/pomodo.io/node_modules/backbone/backbone.js":[function(require,module,exports){
 //     Backbone.js 1.1.2
 
 //     (c) 2010-2014 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
@@ -2474,7 +2474,7 @@ return Backbone.LocalStorage;
 
 }));
 
-},{"underscore":"/home/raphael/src/pomodo.io/public/node_modules/backbone/node_modules/underscore/underscore.js"}],"/home/raphael/src/pomodo.io/public/node_modules/backbone/node_modules/underscore/underscore.js":[function(require,module,exports){
+},{"underscore":"/home/raphael/src/pomodo.io/node_modules/backbone/node_modules/underscore/underscore.js"}],"/home/raphael/src/pomodo.io/node_modules/backbone/node_modules/underscore/underscore.js":[function(require,module,exports){
 //     Underscore.js 1.8.3
 //     http://underscorejs.org
 //     (c) 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
@@ -4024,7 +4024,7 @@ return Backbone.LocalStorage;
   }
 }.call(this));
 
-},{}],"/home/raphael/src/pomodo.io/public/node_modules/fastclick/lib/fastclick.js":[function(require,module,exports){
+},{}],"/home/raphael/src/pomodo.io/node_modules/fastclick/lib/fastclick.js":[function(require,module,exports){
 ;(function () {
 	'use strict';
 
@@ -4867,7 +4867,7 @@ return Backbone.LocalStorage;
 	}
 }());
 
-},{}],"/home/raphael/src/pomodo.io/public/node_modules/handlebars/dist/cjs/handlebars.runtime.js":[function(require,module,exports){
+},{}],"/home/raphael/src/pomodo.io/node_modules/handlebars/dist/cjs/handlebars.runtime.js":[function(require,module,exports){
 "use strict";
 /*globals Handlebars: true */
 var base = require("./handlebars/base");
@@ -4903,7 +4903,7 @@ Handlebars.create = create;
 Handlebars['default'] = Handlebars;
 
 exports["default"] = Handlebars;
-},{"./handlebars/base":"/home/raphael/src/pomodo.io/public/node_modules/handlebars/dist/cjs/handlebars/base.js","./handlebars/exception":"/home/raphael/src/pomodo.io/public/node_modules/handlebars/dist/cjs/handlebars/exception.js","./handlebars/runtime":"/home/raphael/src/pomodo.io/public/node_modules/handlebars/dist/cjs/handlebars/runtime.js","./handlebars/safe-string":"/home/raphael/src/pomodo.io/public/node_modules/handlebars/dist/cjs/handlebars/safe-string.js","./handlebars/utils":"/home/raphael/src/pomodo.io/public/node_modules/handlebars/dist/cjs/handlebars/utils.js"}],"/home/raphael/src/pomodo.io/public/node_modules/handlebars/dist/cjs/handlebars/base.js":[function(require,module,exports){
+},{"./handlebars/base":"/home/raphael/src/pomodo.io/node_modules/handlebars/dist/cjs/handlebars/base.js","./handlebars/exception":"/home/raphael/src/pomodo.io/node_modules/handlebars/dist/cjs/handlebars/exception.js","./handlebars/runtime":"/home/raphael/src/pomodo.io/node_modules/handlebars/dist/cjs/handlebars/runtime.js","./handlebars/safe-string":"/home/raphael/src/pomodo.io/node_modules/handlebars/dist/cjs/handlebars/safe-string.js","./handlebars/utils":"/home/raphael/src/pomodo.io/node_modules/handlebars/dist/cjs/handlebars/utils.js"}],"/home/raphael/src/pomodo.io/node_modules/handlebars/dist/cjs/handlebars/base.js":[function(require,module,exports){
 "use strict";
 var Utils = require("./utils");
 var Exception = require("./exception")["default"];
@@ -5135,7 +5135,7 @@ var createFrame = function(object) {
   return frame;
 };
 exports.createFrame = createFrame;
-},{"./exception":"/home/raphael/src/pomodo.io/public/node_modules/handlebars/dist/cjs/handlebars/exception.js","./utils":"/home/raphael/src/pomodo.io/public/node_modules/handlebars/dist/cjs/handlebars/utils.js"}],"/home/raphael/src/pomodo.io/public/node_modules/handlebars/dist/cjs/handlebars/exception.js":[function(require,module,exports){
+},{"./exception":"/home/raphael/src/pomodo.io/node_modules/handlebars/dist/cjs/handlebars/exception.js","./utils":"/home/raphael/src/pomodo.io/node_modules/handlebars/dist/cjs/handlebars/utils.js"}],"/home/raphael/src/pomodo.io/node_modules/handlebars/dist/cjs/handlebars/exception.js":[function(require,module,exports){
 "use strict";
 
 var errorProps = ['description', 'fileName', 'lineNumber', 'message', 'name', 'number', 'stack'];
@@ -5164,7 +5164,7 @@ function Exception(message, node) {
 Exception.prototype = new Error();
 
 exports["default"] = Exception;
-},{}],"/home/raphael/src/pomodo.io/public/node_modules/handlebars/dist/cjs/handlebars/runtime.js":[function(require,module,exports){
+},{}],"/home/raphael/src/pomodo.io/node_modules/handlebars/dist/cjs/handlebars/runtime.js":[function(require,module,exports){
 "use strict";
 var Utils = require("./utils");
 var Exception = require("./exception")["default"];
@@ -5358,7 +5358,7 @@ exports.noop = noop;function initData(context, data) {
   }
   return data;
 }
-},{"./base":"/home/raphael/src/pomodo.io/public/node_modules/handlebars/dist/cjs/handlebars/base.js","./exception":"/home/raphael/src/pomodo.io/public/node_modules/handlebars/dist/cjs/handlebars/exception.js","./utils":"/home/raphael/src/pomodo.io/public/node_modules/handlebars/dist/cjs/handlebars/utils.js"}],"/home/raphael/src/pomodo.io/public/node_modules/handlebars/dist/cjs/handlebars/safe-string.js":[function(require,module,exports){
+},{"./base":"/home/raphael/src/pomodo.io/node_modules/handlebars/dist/cjs/handlebars/base.js","./exception":"/home/raphael/src/pomodo.io/node_modules/handlebars/dist/cjs/handlebars/exception.js","./utils":"/home/raphael/src/pomodo.io/node_modules/handlebars/dist/cjs/handlebars/utils.js"}],"/home/raphael/src/pomodo.io/node_modules/handlebars/dist/cjs/handlebars/safe-string.js":[function(require,module,exports){
 "use strict";
 // Build out our basic SafeString type
 function SafeString(string) {
@@ -5370,7 +5370,7 @@ SafeString.prototype.toString = function() {
 };
 
 exports["default"] = SafeString;
-},{}],"/home/raphael/src/pomodo.io/public/node_modules/handlebars/dist/cjs/handlebars/utils.js":[function(require,module,exports){
+},{}],"/home/raphael/src/pomodo.io/node_modules/handlebars/dist/cjs/handlebars/utils.js":[function(require,module,exports){
 "use strict";
 /*jshint -W004 */
 var SafeString = require("./safe-string")["default"];
@@ -5459,15 +5459,15 @@ exports.isEmpty = isEmpty;function appendContextPath(contextPath, id) {
 }
 
 exports.appendContextPath = appendContextPath;
-},{"./safe-string":"/home/raphael/src/pomodo.io/public/node_modules/handlebars/dist/cjs/handlebars/safe-string.js"}],"/home/raphael/src/pomodo.io/public/node_modules/handlebars/runtime.js":[function(require,module,exports){
+},{"./safe-string":"/home/raphael/src/pomodo.io/node_modules/handlebars/dist/cjs/handlebars/safe-string.js"}],"/home/raphael/src/pomodo.io/node_modules/handlebars/runtime.js":[function(require,module,exports){
 // Create a simple path alias to allow browserify to resolve
 // the runtime on a supported path.
 module.exports = require('./dist/cjs/handlebars.runtime');
 
-},{"./dist/cjs/handlebars.runtime":"/home/raphael/src/pomodo.io/public/node_modules/handlebars/dist/cjs/handlebars.runtime.js"}],"/home/raphael/src/pomodo.io/public/node_modules/hbsfy/runtime.js":[function(require,module,exports){
+},{"./dist/cjs/handlebars.runtime":"/home/raphael/src/pomodo.io/node_modules/handlebars/dist/cjs/handlebars.runtime.js"}],"/home/raphael/src/pomodo.io/node_modules/hbsfy/runtime.js":[function(require,module,exports){
 module.exports = require("handlebars/runtime")["default"];
 
-},{"handlebars/runtime":"/home/raphael/src/pomodo.io/public/node_modules/handlebars/runtime.js"}],"/home/raphael/src/pomodo.io/public/node_modules/jquery/dist/jquery.js":[function(require,module,exports){
+},{"handlebars/runtime":"/home/raphael/src/pomodo.io/node_modules/handlebars/runtime.js"}],"/home/raphael/src/pomodo.io/node_modules/jquery/dist/jquery.js":[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v2.1.4
  * http://jquery.com/
@@ -14679,7 +14679,7 @@ return jQuery;
 
 }));
 
-},{}],"/home/raphael/src/pomodo.io/public/node_modules/lodash/dist/lodash.js":[function(require,module,exports){
+},{}],"/home/raphael/src/pomodo.io/node_modules/lodash/dist/lodash.js":[function(require,module,exports){
 (function (global){
 /**
  * @license
@@ -21469,14 +21469,14 @@ return jQuery;
 }.call(this));
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],"/home/raphael/src/pomodo.io/public/templates/_controls.html":[function(require,module,exports){
+},{}],"/home/raphael/src/pomodo.io/templates/_controls.html":[function(require,module,exports){
 // hbsfy compiled Handlebars template
 var HandlebarsCompiler = require('hbsfy/runtime');
 module.exports = HandlebarsCompiler.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
   return "<button class=\"js-start\" href=\"#\">start</button>\n<button class=\"js-pause\" href=\"#\" disabled=\"disabled\">pause</button>\n<button class=\"js-reset\" href=\"#\">reset</button>\n";
   },"useData":true});
 
-},{"hbsfy/runtime":"/home/raphael/src/pomodo.io/public/node_modules/hbsfy/runtime.js"}],"/home/raphael/src/pomodo.io/public/templates/_countdown.html":[function(require,module,exports){
+},{"hbsfy/runtime":"/home/raphael/src/pomodo.io/node_modules/hbsfy/runtime.js"}],"/home/raphael/src/pomodo.io/templates/_countdown.html":[function(require,module,exports){
 // hbsfy compiled Handlebars template
 var HandlebarsCompiler = require('hbsfy/runtime');
 module.exports = HandlebarsCompiler.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
@@ -21487,7 +21487,7 @@ module.exports = HandlebarsCompiler.template({"compiler":[6,">= 2.0.0-beta.1"],"
     + "\n";
 },"useData":true});
 
-},{"hbsfy/runtime":"/home/raphael/src/pomodo.io/public/node_modules/hbsfy/runtime.js"}],"/home/raphael/src/pomodo.io/public/templates/_notification.html":[function(require,module,exports){
+},{"hbsfy/runtime":"/home/raphael/src/pomodo.io/node_modules/hbsfy/runtime.js"}],"/home/raphael/src/pomodo.io/templates/_notification.html":[function(require,module,exports){
 // hbsfy compiled Handlebars template
 var HandlebarsCompiler = require('hbsfy/runtime');
 module.exports = HandlebarsCompiler.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
@@ -21496,14 +21496,14 @@ module.exports = HandlebarsCompiler.template({"compiler":[6,">= 2.0.0-beta.1"],"
     + "\n";
 },"useData":true});
 
-},{"hbsfy/runtime":"/home/raphael/src/pomodo.io/public/node_modules/hbsfy/runtime.js"}],"/home/raphael/src/pomodo.io/public/templates/_sidebar.html":[function(require,module,exports){
+},{"hbsfy/runtime":"/home/raphael/src/pomodo.io/node_modules/hbsfy/runtime.js"}],"/home/raphael/src/pomodo.io/templates/_sidebar.html":[function(require,module,exports){
 // hbsfy compiled Handlebars template
 var HandlebarsCompiler = require('hbsfy/runtime');
 module.exports = HandlebarsCompiler.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
   return "<h2>What is this?</h2>\n<p>\n	Pomodoro is a workflow technique, where you have bursts of productivty with small breaks, then after\n	a certain duration, you have an extended break. This is to help alleviate either burning yourself out from\n	long intense sessions or the exact opposite, not concentrating enough!\n</p>\n<p>The most common implementation and used on this site is as follows:</p>\n<ol>\n	<li>25 minutes of work</li>\n	<li>5 minute break</li>\n	<li>Repeat four times, after which you have a 10 minute break</li>\n	<li>Start a new Pomodoro</li>\n</ol>\n<p>\n	Your pomodori (1 interval) count is displayed in the top left hand corner.\n</p>\n<p>\n	For more extensive information please see the\n	<a href=\"http://en.wikipedia.org/wiki/Pomodoro_Technique\">Pomodoro technique Wikipedia entry</a>.\n</p>\n\n<hr class=\"break\" />\n\n<h2>Settings</h2>\n\n<!--Desktop/Audio Notifications-->\n<div data-region=\"toggle-notifications\">\n\n</div>\n\n<hr class=\"break\" />\n\n<div class=\"credit\">\n	<p>\n		Made by <a href=\"http://tomspeak.co.uk\">Tom Speak</a>. Say hello\n		<a href=\"http://twitter.com/tom_speak\">@tom_speak</a>\n	</p>\n	<p>View the code on <a href=\"https://github.com/TomSpeak/pomodo.io\">Github</a></p>\n</div>\n";
   },"useData":true});
 
-},{"hbsfy/runtime":"/home/raphael/src/pomodo.io/public/node_modules/hbsfy/runtime.js"}],"/home/raphael/src/pomodo.io/public/templates/_toggle-notifications.html":[function(require,module,exports){
+},{"hbsfy/runtime":"/home/raphael/src/pomodo.io/node_modules/hbsfy/runtime.js"}],"/home/raphael/src/pomodo.io/templates/_toggle-notifications.html":[function(require,module,exports){
 // hbsfy compiled Handlebars template
 var HandlebarsCompiler = require('hbsfy/runtime');
 module.exports = HandlebarsCompiler.template({"1":function(depth0,helpers,partials,data) {
@@ -21540,4 +21540,4 @@ module.exports = HandlebarsCompiler.template({"1":function(depth0,helpers,partia
   return buffer;
 },"useData":true});
 
-},{"hbsfy/runtime":"/home/raphael/src/pomodo.io/public/node_modules/hbsfy/runtime.js"}]},{},["./js/app.js"]);
+},{"hbsfy/runtime":"/home/raphael/src/pomodo.io/node_modules/hbsfy/runtime.js"}]},{},["./js/app.js"]);

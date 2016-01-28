@@ -20,7 +20,7 @@ var models = {
 
 module.exports = Backbone.Router.extend({
 	routes: {
-		'': "home"
+		'pomodo.io/': "home"
 	},
 	
 	initialize: function(callback){
